@@ -13,9 +13,12 @@
 		3068D2E321C25E8B0006EC6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3068D2E221C25E8B0006EC6E /* Assets.xcassets */; };
 		3068D2E621C25E8B0006EC6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3068D2E421C25E8B0006EC6E /* LaunchScreen.storyboard */; };
 		3068D2E921C25E8B0006EC6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3068D2E821C25E8B0006EC6E /* main.m */; };
+		3068D2F121C25F3F0006EC6E /* ViewController+mSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3068D2F021C25F3F0006EC6E /* ViewController+mSDK.swift */; };
+		6D4A7611E4816A6B7ABF7721 /* Pods_msdk_objc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B875E46D9509EC7D2D11545 /* Pods_msdk_objc.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		302B15DDD86D6739111C5635 /* Pods-msdk-objc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-msdk-objc.release.xcconfig"; path = "Pods/Target Support Files/Pods-msdk-objc/Pods-msdk-objc.release.xcconfig"; sourceTree = "<group>"; };
 		3068D2D621C25E8A0006EC6E /* msdk-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "msdk-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3068D2D921C25E8A0006EC6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3068D2DA21C25E8A0006EC6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,10 @@
 		3068D2E521C25E8B0006EC6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3068D2E721C25E8B0006EC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3068D2E821C25E8B0006EC6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3068D2EF21C25F3F0006EC6E /* msdk-objc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "msdk-objc-Bridging-Header.h"; sourceTree = "<group>"; };
+		3068D2F021C25F3F0006EC6E /* ViewController+mSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+mSDK.swift"; sourceTree = "<group>"; };
+		6ADBE0A391872F3F26B9E59D /* Pods-msdk-objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-msdk-objc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-msdk-objc/Pods-msdk-objc.debug.xcconfig"; sourceTree = "<group>"; };
+		6B875E46D9509EC7D2D11545 /* Pods_msdk_objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_msdk_objc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D4A7611E4816A6B7ABF7721 /* Pods_msdk_objc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E20EB7AE7E0D0847C7277C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B875E46D9509EC7D2D11545 /* Pods_msdk_objc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3068D2CD21C25E8A0006EC6E = {
 			isa = PBXGroup;
 			children = (
 				3068D2D821C25E8A0006EC6E /* msdk-objc */,
 				3068D2D721C25E8A0006EC6E /* Products */,
+				CC0CC87D38FAE6CCEA39A508 /* Pods */,
+				0E20EB7AE7E0D0847C7277C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,13 +80,24 @@
 				3068D2DA21C25E8A0006EC6E /* AppDelegate.m */,
 				3068D2DC21C25E8A0006EC6E /* ViewController.h */,
 				3068D2DD21C25E8A0006EC6E /* ViewController.m */,
+				3068D2F021C25F3F0006EC6E /* ViewController+mSDK.swift */,
 				3068D2DF21C25E8A0006EC6E /* Main.storyboard */,
 				3068D2E221C25E8B0006EC6E /* Assets.xcassets */,
 				3068D2E421C25E8B0006EC6E /* LaunchScreen.storyboard */,
 				3068D2E721C25E8B0006EC6E /* Info.plist */,
 				3068D2E821C25E8B0006EC6E /* main.m */,
+				3068D2EF21C25F3F0006EC6E /* msdk-objc-Bridging-Header.h */,
 			);
 			path = "msdk-objc";
+			sourceTree = "<group>";
+		};
+		CC0CC87D38FAE6CCEA39A508 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6ADBE0A391872F3F26B9E59D /* Pods-msdk-objc.debug.xcconfig */,
+				302B15DDD86D6739111C5635 /* Pods-msdk-objc.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3068D2EC21C25E8B0006EC6E /* Build configuration list for PBXNativeTarget "msdk-objc" */;
 			buildPhases = (
+				E7C53713C063188C33861836 /* [CP] Check Pods Manifest.lock */,
 				3068D2D221C25E8A0006EC6E /* Sources */,
 				3068D2D321C25E8A0006EC6E /* Frameworks */,
 				3068D2D421C25E8A0006EC6E /* Resources */,
+				C71893310D2820691EB185A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -102,6 +133,7 @@
 				TargetAttributes = {
 					3068D2D521C25E8A0006EC6E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -136,12 +168,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C71893310D2820691EB185A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-msdk-objc/Pods-msdk-objc-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FunctionalSwift/FunctionalSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/When/When.framework",
+				"${BUILT_PRODUCTS_DIR}/YandexCheckoutPayments/YandexCheckoutPayments.framework",
+				"${BUILT_PRODUCTS_DIR}/YandexCheckoutPaymentsApi/YandexCheckoutPaymentsApi.framework",
+				"${BUILT_PRODUCTS_DIR}/YandexCheckoutShowcaseApi/YandexCheckoutShowcaseApi.framework",
+				"${BUILT_PRODUCTS_DIR}/YandexCheckoutWalletApi/YandexCheckoutWalletApi.framework",
+				"${BUILT_PRODUCTS_DIR}/YandexLoginSDK/YandexLoginSDK.framework",
+				"${PODS_ROOT}/YandexMobileMetrica/dynamic/YandexMobileMetrica.framework",
+				"${BUILT_PRODUCTS_DIR}/YandexMoneyCoreApi/YandexMoneyCoreApi.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FunctionalSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/When.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexCheckoutPayments.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexCheckoutPaymentsApi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexCheckoutShowcaseApi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexCheckoutWalletApi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexLoginSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexMobileMetrica.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexMoneyCoreApi.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-msdk-objc/Pods-msdk-objc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7C53713C063188C33861836 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-msdk-objc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3068D2D221C25E8A0006EC6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3068D2DE21C25E8A0006EC6E /* ViewController.m in Sources */,
+				3068D2F121C25F3F0006EC6E /* ViewController+mSDK.swift in Sources */,
 				3068D2E921C25E8B0006EC6E /* main.m in Sources */,
 				3068D2DB21C25E8A0006EC6E /* AppDelegate.m in Sources */,
 			);
@@ -283,8 +371,10 @@
 		};
 		3068D2ED21C25E8B0006EC6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ADBE0A391872F3F26B9E59D /* Pods-msdk-objc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5V5PKY8F9C;
 				INFOPLIST_FILE = "msdk-objc/Info.plist";
@@ -294,14 +384,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oltv00.msdk-objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "msdk-objc/msdk-objc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		3068D2EE21C25E8B0006EC6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 302B15DDD86D6739111C5635 /* Pods-msdk-objc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5V5PKY8F9C;
 				INFOPLIST_FILE = "msdk-objc/Info.plist";
@@ -311,6 +406,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oltv00.msdk-objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "msdk-objc/msdk-objc-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

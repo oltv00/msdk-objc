@@ -1,0 +1,63 @@
+{
+  "name": "YandexCheckoutPayments",
+  "version": "1.3.6",
+  "homepage": "https://github.com/yandex-money/yandex-checkout-payments-swift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": "Yandex Checkout",
+  "summary": "Yandex Checkout Payments",
+  "source": {
+    "git": "https://github.com/yandex-money/yandex-checkout-payments-swift.git",
+    "tag": "1.3.6"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "swift_version": "4.1",
+  "ios": {
+    "source_files": [
+      "YandexCheckoutPayments/**/*.{h,swift}",
+      "YandexCheckoutPayments/*.{h,swift}"
+    ],
+    "resources": [
+      "YandexCheckoutPayments/Resources/*.xcassets",
+      "YandexCheckoutPayments/Resources/**/*.plist",
+      "YandexCheckoutPayments/Resources/*.lproj/*.strings"
+    ],
+    "frameworks": "PassKit",
+    "libraries": "z",
+    "vendored_frameworks": "Frameworks/TrustDefender.framework",
+    "dependencies": {
+      "FunctionalSwift": [
+
+      ],
+      "When": [
+
+      ],
+      "YandexLoginSDK": [
+
+      ],
+      "YandexMoneyCoreApi": [
+
+      ],
+      "YandexCheckoutPaymentsApi": [
+
+      ],
+      "YandexCheckoutShowcaseApi": [
+
+      ],
+      "YandexCheckoutWalletApi": [
+
+      ],
+      "YandexMobileMetrica/Dynamic": [
+        "~> 3.1.2"
+      ]
+    }
+  },
+  "pod_target_xcconfig": {
+    "OTHER_LDFLAGS": "-framework \"TrustDefender\"",
+    "FRAMEWORK_SEARCH_PATHS": "\"${PODS_ROOT}/../Frameworks\""
+  }
+}

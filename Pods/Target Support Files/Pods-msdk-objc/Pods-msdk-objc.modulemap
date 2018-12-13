@@ -1,0 +1,6 @@
+framework module Pods_msdk_objc {
+  umbrella header "Pods-msdk-objc-umbrella.h"
+
+  export *
+  module * { export * }
+}
